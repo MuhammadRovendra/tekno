@@ -1,0 +1,389 @@
+    @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+        --bg-color: #800000;
+        --second-bg-color: #323946;
+        --text-color: #fff;
+        --main-color: yellow;
+    }
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    body {
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 10rem 9% 2rem;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem 9%;
+        background: var(--bg-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: default;
+    }
+
+    .navbar a {
+        font-size: 1.7rem;
+        color: var(--text-color);
+        margin-left: 4rem;
+        transition: .3s;
+    }
+
+    .navbar a:hover {
+        color: var(--main-color);
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: var(--main-color);
+    }
+
+    #menu-icon {
+        font-size: 3.6rem;
+        color: var(--text-color);
+        display: none;
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('example_img_girl.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .home-img img {
+        width: 35vw;
+    }
+
+    .home-content h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    } 
+
+    .home-content h1 {
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .social-media a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: .2rem solid var(--main-color);
+        border-radius: 50%;
+        font-size: 2rem;
+        color: var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+    }
+
+    /* CSS untuk Section Contact v.2 */
+    section.mb-4 {
+        padding: 40px 0;
+    }
+    
+    h2.h1-responsive {
+        font-size: 2.5rem;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .w-responsive {
+        width: 100%;
+    }
+    
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mb-5 {
+        margin-bottom: 3rem;
+    }
+    
+    .col-md-9 {
+        width: 75%;
+    }
+    
+    #name,
+    #email,
+    #subject,
+    #message {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .btn.btn-primary {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    .text-md-left {
+        text-align: left;
+    }
+    
+    .text-center.text-md-left {
+        text-align: center;
+    }
+    
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    .fa-2x {
+        font-size: 2rem;
+    }
+    
+    .mb-4.fa-2x {
+        margin-bottom: 1rem;
+    }
+    
+    /* CSS untuk lokasi */
+    .lokasi {
+        margin-top: 40px;
+    }
+    
+    .lokasitekno iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+    }
+
+    .row {
+        margin-left: 1%;
+    }
+
+    #contact-form {
+        max-width: 500px;
+        width: 100%;
+    }
+    .md-form {
+        margin-bottom: 10px;
+    }
+    .md-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .md-textarea {
+        height: 100px;
+        padding: 10px;
+    }
+    .btn-primary {
+        background-color: var(--main-color);
+        color: var(--text-color);
+        transition: background-color 0.3s;
+    }
+    
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+    .list-unstyled li {
+        margin-bottom: 10px;
+    }
+    
+    .fakultas-section {
+    background-color: var(--bg-color);
+    padding: 50px 0;
+    text-align: center;
+    }
+
+    .fakultas-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    }
+
+    .fakultas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    }
+
+    .fakultas-card {
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    }
+
+    .fakultas-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    }
+
+    .fakultas-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    }
+
+    .fakultas-card p {
+    font-size: 16px;
+    color: var(--text-color);
+    }
+
+    .fasilitas-section {
+        background-color: var(--bg-color);
+        padding: 50px 0;
+        text-align: center;
+      }
+      
+      .fasilitas-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+      }
+      
+      .fasilitas-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      
+      .fasilitas-card {
+        background-color: var(--second-bg-color);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .fasilitas-card img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      
+      .fasilitas-card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+      
+      .fasilitas-card p {
+        font-size: 16px;
+        color: var(--text-color);
+      }
+      .prestasi-section {
+        background-color: var(--bg-color);
+        padding: 50px 0;
+        text-align: center;
+      }
+      
+      .prestasi-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+      }
+      
+      .prestasi-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      
+      .prestasi-card {
+        background-color: var(--second-bg-color);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .prestasi-card img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      
+      .prestasi-card h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+      
+      .prestasi-card p {
+        font-size: 16px;
+        color: var(--text-color);
+      }
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Untuk menjaga aspek rasio video 16:9 */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+                
